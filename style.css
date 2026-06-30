@@ -1,0 +1,521 @@
+/* ==========================================
+   NV BEAUTY
+   Premium Theme
+========================================== */
+
+:root{
+
+    --primary:#b78b48;
+    --secondary:#f7f4ef;
+    --dark:#1d1d1d;
+    --light:#ffffff;
+    --gray:#666;
+    --radius:18px;
+    --shadow:0 18px 40px rgba(0,0,0,.10);
+    --transition:.35s ease;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#faf8f5;
+
+    color:var(--dark);
+
+    line-height:1.7;
+
+}
+
+/*==========================
+HEADER
+==========================*/
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:999;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.75);
+
+    box-shadow:0 3px 20px rgba(0,0,0,.05);
+
+}
+
+nav{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:20px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    letter-spacing:1px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:40px;
+
+}
+
+nav a{
+
+    color:var(--dark);
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:70px;
+
+    padding:130px 10% 70px;
+
+    background:
+
+    linear-gradient(135deg,#ffffff,#f5efe6);
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:390px;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.6s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero h1{
+
+    font-size:3.8rem;
+
+    margin-bottom:10px;
+
+}
+
+.hero h2{
+
+    color:var(--primary);
+
+    font-weight:500;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    max-width:520px;
+
+    color:var(--gray);
+
+    margin-bottom:40px;
+
+}
+
+/*==========================
+BOTÕES
+==========================*/
+
+.btn{
+
+    display:inline-block;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#c9a15b,#9f783b);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(183,139,72,.35);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(183,139,72,.45);
+
+}
+
+/*==========================
+SOCIAL
+==========================*/
+
+.social{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.social a{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    font-size:1.2rem;
+
+}
+
+.social a:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}
+
+/*==========================
+SECTIONS
+==========================*/
+
+section{
+
+    padding:90px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:2.4rem;
+
+    margin-bottom:20px;
+
+}
+
+section>p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:var(--gray);
+
+}
+
+/*==========================
+CARDS
+==========================*/
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    margin-top:50px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    padding:20px 20px 10px;
+
+}
+
+.card p{
+
+    padding:0 25px 30px;
+
+    color:var(--gray);
+
+}
+
+/*==========================
+CONTATO
+==========================*/
+
+.mapas{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.mapas a{
+
+    padding:14px 24px;
+
+    border-radius:50px;
+
+    background:white;
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.mapas a:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+
+    background:#181818;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+/*==========================
+ANIMAÇÃO
+==========================*/
+
+.hero,
+.card,
+section{
+
+    animation:fade .8s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+/*==========================
+RESPONSIVO
+==========================*/
+
+@media(max-width:960px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero p{
+
+margin:auto auto 40px;
+
+}
+
+.hero h1{
+
+font-size:2.8rem;
+
+}
+
+.hero-image img{
+
+width:300px;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+}
